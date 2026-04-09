@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <nav aria-label="Main Navigation">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#attendance">Attendance List</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#remarks">Remarks</a></li>
+    </ul>
+    </nav>
+
+    <hr>
+
+    <section id="home">
+        <title>Lab 2 - Meeting</title>
+        <h1>Matcha Website Dev Meeting 1</h1>
+        <meta name="matcha website" content="A website to call meeting about a potential matcha website, including features wanted and potential issues we may run into.">
+        <p>This meeting is about <strong>the potential matcha website that'll launch to help everyone interested in matcha, regardless of their experience levels and knowledge.</strong></p>
+        <p>The date of this meeting will be on <b>April 1st, 2026</b>.</p>
+        <p>Here are the audio recordings from the meeting:</p>
+        
+        <audio controls>
+            <source src="aespa 에스파 'Welcome To MY World (Feat. nævis)' MV.mp3" type="audio/mpeg">
+        </audio>
+
+        <details>
+            <summary>NOTE TO TAs</summary>
+                <p>This isn't an actual audio recording, it's just a song!</p>
+        </details>
+    </section>
+  </head>
+  
+    <body>
+        <hr>
+
+        <section id="goals">
+            <main>
+                <h2>The <span>primary</span> goal:</h2>
+                <p>Make a website that'll give the best matcha powder recommendations, <i>best</i> ratios, and more. <br> This website should be a landing hub for all things matcha!</h3></p>
+                <a href="https://www.reddit.com/r/Matcha/comments/1iu3i87/pains_me_to_ask_but_alternatives_to_ippodo/">Link of Matcha Powder Recs</a>
+            </main>
+        </section>
+
+        <hr>
+
+        <div class="Attendance List" id="user-profiles"> 
+            <section id="attendance">
+                <h3>This is the attendance list:</h3>
+                <ul id="attendance-list">
+                    <li>Emily</li>
+                    <li>Thomas</li>
+                    <li>Karina</li>
+                    <li>Aidan</li>
+                </ul>   
+            </section>
+
+            <p>Input your name here to be marked for attendance!</p>
+            <form id="name-form" action="/submit-data" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <hr>
+
+        <section id="agenda">
+            <li> <h3>Agenda</h3>
+                <ol>
+                    <li>Housekeeping (5 min)</li>
+                    <li>UI/UX Discussion (20 mins)</li>
+                </ol>
+            </li>
+
+            <p>Things we didn't cover last time</p>
+                <ol>
+                    <li>Username and password additions</li>
+                    <li>Loading screen?</li>
+                </ol>
+            </li>
+            <p><em>New</em> things that'll be covered </p>
+                <ol>
+                    <li>Sponsors?</li>
+                    <li>Launch date</li>
+                </ol>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="remarks">
+            <h3>Comments and Concerns</h3>
+            
+            <p>Details from today's meeting!</p>
+            <img src="Screenshot 2026-04-08 at 22.27.28.png" width="600" alt="Meeting Notes">
+
+            <p>I recently went to the beach and really enjoyed the scenery. It's very calming and I would like to see the color palette be similar to this video:</p>
+            <video width="640" height="360" controls>
+                <source src="IMG_8789.MOV" type="video/mp4">
+            </video>
+
+            <p>As someone who is very interested in the matcha making process, I like to experiment with different flavors. My favorite was a banana pudding matcha latte -- Maybe we can incorperate a section that finds the best flavor combos based on your preferences?</p>
+
+            <p>Thinking about the future of our matcha website, I envision more social media influence, and we can make TikTok's to promote it! We can also show how to make drinks, like the ones I made below:</p>
+
+            <details>
+                <summary>Click to see images of my creations</summary>
+                    <img src="IMG_2367.JPG" width="300" alt="My yummy banana pudding matcha">
+                    <p>Banana Pudding Matcha</p>
+                    <img src="IMG_2449.JPG" width="300">
+                    <p>Biscoff Pudding Matcha!</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <form>
+            <fieldset>
+                <legend>Favorite Matcha Cafe</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="taste">Location:</label>
+                <input type="text" id="taste" name="taste">
+            </fieldset>
+        </form>
+
+        <br>
+
+        <label for="feedback">Any more feedback?:</label>
+        <br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"> Enter your text here...
+        </textarea>
+
+        <br>
+
+        <label for="powder">Choose your favorite matcha brand:</label>
+            <select name="powder" id="powder">
+                <option value="Select">Select</opetion>
+                <option value="Marukyu Koyamaen">Marukyu Koyamaen</option>
+                <option value="Nami Matcha">Nami Matcha</option>
+                <option value="Rocky's Matcha">Rocky's Matcha</option>
+                <option value="Ippodo">Ippodo</option>
+            </select>
+
+        <br> 
+
+        <label for="cup">Choose your preferred cup:</label>
+        <input list="cups" name="cup" id="cup">
+
+        <datalist id="cups">
+            <option value="Glass">
+            <option value="Ceramic">
+            <option value="Owala">
+            <option value="Hydro Flask">
+        </datalist>
+    </body>
+</html>
+
+<footer>
+    <p>© 2026 Emily Nguyen</p>
+</footer>
+
+
